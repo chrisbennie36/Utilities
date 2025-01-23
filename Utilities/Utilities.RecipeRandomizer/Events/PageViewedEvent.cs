@@ -1,6 +1,6 @@
 namespace Utilities.RecipeRandomizer.Events
 {
-    public class PageViewed
+    public class PageViewedEvent
     {
         public PageType PageType { get; set; }
     }

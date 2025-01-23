@@ -1,6 +1,6 @@
 namespace Utilities.RecipeRandomizer.Events
 {
-    public class RecipeRated
+    public class RecipeRatedEvent
     {
         public int UserId { get; set; }
         public string RecipeName { get; set; } = string.Empty;
