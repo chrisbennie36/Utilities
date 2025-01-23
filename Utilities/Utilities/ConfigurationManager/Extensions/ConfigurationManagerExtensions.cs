@@ -4,7 +4,7 @@ using ConfigurationManager = Microsoft.Extensions.Configuration.ConfigurationMan
 
 public static class ConfigurationManagerExtensions
 {
-    public static string GetValue (this ConfigurationManager configurationManager, string key)
+    public static string GetStringValue (this ConfigurationManager configurationManager, string key)
     {
         string? value = configurationManager[key];
 
@@ -15,7 +15,7 @@ public static class ConfigurationManagerExtensions
 
     public static bool GetBoolValue(this ConfigurationManager configurationManager, string key)
     {
-        string configValue = GetValue(configurationManager, key);
+        string configValue = GetStringValue(configurationManager, key);
 
         bool boolConfigValue;
 
@@ -29,7 +29,7 @@ public static class ConfigurationManagerExtensions
 
     public static int GetIntValue(this ConfigurationManager configurationManager, string key)
     {
-        string configValue = GetValue(configurationManager, key);
+        string configValue = GetStringValue(configurationManager, key);
 
         int intConfigValue;
         
