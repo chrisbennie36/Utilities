@@ -1,0 +1,197 @@
+{
+  "version": "39.0.0",
+  "artifacts": {
+    "recipe-randomizer-database-stack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "recipe-randomizer-database-stack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "recipe-randomizer-database-stack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "recipe-randomizer-database-stack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/5f157a73926a14af9058d104807a09fb9b08fd6d16db895dbde2b1f3fe17fccb.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "recipe-randomizer-database-stack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "recipe-randomizer-database-stack.assets"
+      ],
+      "metadata": {
+        "/recipe-randomizer-database-stack/postgres-vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpc6F73F29B"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/PostgresDbPublicSubnetSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcPostgresDbPublicSubnetSubnet1Subnet41B19006"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/PostgresDbPublicSubnetSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcPostgresDbPublicSubnetSubnet1RouteTableD0CB2DED"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/PostgresDbPublicSubnetSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcPostgresDbPublicSubnetSubnet1RouteTableAssociation74F4308A"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/PostgresDbPublicSubnetSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcPostgresDbPublicSubnetSubnet1DefaultRoute672CF40F"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/PostgresDbPublicSubnetSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcPostgresDbPublicSubnetSubnet2Subnet8BE6B61E"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/PostgresDbPublicSubnetSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcPostgresDbPublicSubnetSubnet2RouteTableA8E6D74E"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/PostgresDbPublicSubnetSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcPostgresDbPublicSubnetSubnet2RouteTableAssociation3B7AAFE7"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/PostgresDbPublicSubnetSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcPostgresDbPublicSubnetSubnet2DefaultRoute03524F8B"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcIGW4169B498"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcVPCGWD20C445D"
+          }
+        ],
+        "/recipe-randomizer-database-stack/postgres-vpc/RestrictDefaultSecurityGroupCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "postgresvpcRestrictDefaultSecurityGroupCustomResource41658192"
+          }
+        ],
+        "/recipe-randomizer-database-stack/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/recipe-randomizer-database-stack/Custom::VpcRestrictDefaultSGCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/recipe-randomizer-database-stack/Custom::VpcRestrictDefaultSGCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderRole26592FE0"
+          }
+        ],
+        "/recipe-randomizer-database-stack/Custom::VpcRestrictDefaultSGCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomVpcRestrictDefaultSGCustomResourceProviderHandlerDC833E5E"
+          }
+        ],
+        "/recipe-randomizer-database-stack/db-security-group/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dbsecuritygroupF2B234B9"
+          }
+        ],
+        "/recipe-randomizer-database-stack/recipe-randomizer-db/SubnetGroup/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "reciperandomizerdbSubnetGroup78316A4F"
+          }
+        ],
+        "/recipe-randomizer-database-stack/recipe-randomizer-db/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "reciperandomizerdbSecret39B4985B"
+          }
+        ],
+        "/recipe-randomizer-database-stack/recipe-randomizer-db/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "reciperandomizerdbSecretAttachment5075E5A9"
+          }
+        ],
+        "/recipe-randomizer-database-stack/recipe-randomizer-db/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "reciperandomizerdbFDCBF6B0"
+          }
+        ],
+        "/recipe-randomizer-database-stack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/recipe-randomizer-database-stack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/recipe-randomizer-database-stack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/recipe-randomizer-database-stack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "recipe-randomizer-database-stack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

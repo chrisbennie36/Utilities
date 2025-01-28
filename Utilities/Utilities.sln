@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Util
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.RecipeRandomizer", "Utilities.RecipeRandomizer\Utilities.RecipeRandomizer.csproj", "{E3E48083-D54A-4CBD-BE7C-4C6DC96758DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.RecipeRandomizer.Infrastructure", "Utilities.RecipeRandomizer.Infrastructure\Utilities.RecipeRandomizer.Infrastructure.csproj", "{9F6BAD93-F0CD-4295-A330-4619CD5ED5FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{E3E48083-D54A-4CBD-BE7C-4C6DC96758DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3E48083-D54A-4CBD-BE7C-4C6DC96758DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3E48083-D54A-4CBD-BE7C-4C6DC96758DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F6BAD93-F0CD-4295-A330-4619CD5ED5FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F6BAD93-F0CD-4295-A330-4619CD5ED5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F6BAD93-F0CD-4295-A330-4619CD5ED5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F6BAD93-F0CD-4295-A330-4619CD5ED5FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
